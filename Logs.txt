@@ -1,0 +1,47 @@
+2022-05-17 23:40:23 ERROR LogHandler:16 - Arguments should be in the format --args='<File>'.
+2022-05-18 12:15:23 ERROR LogHandler:37 - Error parsing file < logfile.txt >
+2022-05-18 12:16:24 INFO  DAO:20 - Opening database connection at < hsqldb/logs >
+2022-05-18 12:16:25 INFO  ENGINE:? - Checkpoint start
+2022-05-18 12:16:25 INFO  ENGINE:? - checkpointClose start
+2022-05-18 12:16:25 INFO  ENGINE:? - checkpointClose end
+2022-05-18 12:16:25 INFO  ENGINE:? - Checkpoint end - txts: 1
+2022-05-18 12:16:25 INFO  DAO:28 - Creating Events table
+2022-05-18 12:16:25 DEBUG LogHandler:29 - Parsing file <C:\Users\Viraaj\IdeaProjects\LoggerSystem\src\main\resources\logfile.txt> for events.
+2022-05-18 12:16:25 DEBUG DAO:53 - Retrieving all DB entries in < Events > table.
+2022-05-18 12:16:25 DEBUG DAO:58 - Alert for EventID <scsmbstgra>
+2022-05-18 12:16:25 DEBUG DAO:58 - Alert for EventID <scsmbstgrc>
+2022-05-18 12:16:25 WARN  DAO:66 - Deleting all entries in DB table < Events >.
+2022-05-18 12:16:25 INFO  DAO:46 - Closing DB connection.
+2022-05-18 12:20:22 ERROR LogHandler:37 - Error parsing file < args[0] >
+2022-05-18 12:20:52 ERROR LogHandler:37 - Error parsing file < args[0] >
+2022-05-18 12:21:19 INFO  DAO:20 - Opening database connection at < hsqldb/logs >
+2022-05-18 12:21:19 INFO  ENGINE:? - checkpointClose start
+2022-05-18 12:21:19 INFO  ENGINE:? - checkpointClose end
+2022-05-18 12:21:19 INFO  DAO:28 - Creating Events table
+2022-05-18 12:21:20 DEBUG LogHandler:29 - Parsing file <C:\Users\Viraaj\IdeaProjects\LoggerSystem\src\main\resources\logfile.txt> for events.
+2022-05-18 12:21:20 DEBUG DAO:53 - Retrieving all DB entries in < Events > table.
+2022-05-18 12:21:20 DEBUG DAO:58 - Alert for EventID <scsmbstgra>
+2022-05-18 12:21:20 DEBUG DAO:58 - Alert for EventID <scsmbstgrc>
+2022-05-18 12:21:20 WARN  DAO:66 - Deleting all entries in DB table < Events >.
+2022-05-18 12:21:20 INFO  DAO:46 - Closing DB connection.
+2022-05-18 12:23:23 INFO  DAO:20 - Opening database connection at < hsqldb/logs >
+2022-05-18 12:23:24 INFO  ENGINE:? - checkpointClose start
+2022-05-18 12:23:24 INFO  ENGINE:? - checkpointClose end
+2022-05-18 12:23:24 INFO  DAO:28 - Creating Events table
+2022-05-18 12:23:24 DEBUG LogHandler:28 - Parsing file <C:\Users\Viraaj\IdeaProjects\LoggerSystem\src\main\resources\logfile.txt> for events.
+2022-05-18 12:23:24 DEBUG DAO:53 - Retrieving all DB entries in < Events > table.
+2022-05-18 12:23:24 DEBUG DAO:58 - Alert for EventID <scsmbstgra>
+2022-05-18 12:23:24 DEBUG DAO:58 - Alert for EventID <scsmbstgrc>
+2022-05-18 12:23:24 WARN  DAO:66 - Deleting all entries in DB table < Events >.
+2022-05-18 12:23:24 INFO  DAO:46 - Closing DB connection.
+2022-05-18 16:21:10 INFO  DatabaseConnection:20 - Opening database connection at < hsqldb/logs >
+2022-05-18 16:21:11 INFO  ENGINE:? - checkpointClose start
+2022-05-18 16:21:11 INFO  ENGINE:? - checkpointClose end
+2022-05-18 16:21:11 INFO  DatabaseConnection:28 - Creating Events table
+2022-05-18 16:21:11 DEBUG LogHandler:28 - Parsing file <C:\Users\Viraaj\IdeaProjects\LoggerSystem\src\main\resources\logfile.txt> for events.
+2022-05-18 16:21:11 DEBUG DatabaseConnection:53 - Retrieving all DB entries in < Events > table.
+2022-05-18 16:21:11 DEBUG DatabaseConnection:58 - Alert for EventID <scsmbstgra>
+2022-05-18 16:21:11 DEBUG DatabaseConnection:58 - Alert for EventID <scsmbstgrc>
+2022-05-18 16:21:11 WARN  DatabaseConnection:66 - Deleting all entries in DB table < Events >.
+2022-05-18 16:21:11 INFO  DatabaseConnection:46 - Closing DB connection.
+2022-05-18 17:04:21 ERROR LogHandler:16 - Arguments needs be in the format --args='<File>'.
