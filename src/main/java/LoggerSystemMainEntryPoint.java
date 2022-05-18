@@ -8,8 +8,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class LogHandler {
-    private final static Log logger = LogFactory.getLog(LogHandler.class);
+public class LoggerSystemMainEntryPoint {
+    private final static Log logger = LogFactory.getLog(LoggerSystemMainEntryPoint.class);
 
     public static void main(String[] args) {
         if (args == null || args.length != 1) {
