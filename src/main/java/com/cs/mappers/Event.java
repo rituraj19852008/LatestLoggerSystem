@@ -1,4 +1,4 @@
-package models;
+package com.cs.mappers;
 
 public class Event {
     private String id;

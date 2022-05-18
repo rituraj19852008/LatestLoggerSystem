@@ -1,5 +1,7 @@
-import helpers.DatabaseConnection;
-import helpers.Parser;
+package com.cs.main;
+
+import com.cs.utils.DatabaseConnection;
+import com.cs.utils.Parser;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -25,7 +27,7 @@ public class LoggerSystemMainEntryPoint {
             DatabaseConnection databaseConnection = new DatabaseConnection();
             databaseConnection.createEventsTable();
 
-            logger.debug("Parsing file <" + file + "> for events.");
+            logger.debug("Parsing file " + file + " for events.");
             Parser parser = new Parser();
             parser.parseLogs(reader, databaseConnection);
 

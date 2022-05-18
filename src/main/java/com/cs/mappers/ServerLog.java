@@ -1,4 +1,4 @@
-package models;
+package com.cs.mappers;
 
 public class ServerLog {
     private long timestamp;

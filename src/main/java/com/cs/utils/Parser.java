@@ -1,8 +1,8 @@
-package helpers;
+package com.cs.utils;
 
 import com.google.gson.Gson;
-import models.Event;
-import models.ServerLog;
+import com.cs.mappers.Event;
+import com.cs.mappers.ServerLog;
 
 import java.io.*;
 import java.sql.SQLException;

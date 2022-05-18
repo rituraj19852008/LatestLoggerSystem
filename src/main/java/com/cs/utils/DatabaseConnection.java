@@ -1,6 +1,6 @@
-package helpers;
+package com.cs.utils;
 
-import models.Event;
+import com.cs.mappers.Event;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
