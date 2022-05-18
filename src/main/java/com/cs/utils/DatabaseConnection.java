@@ -55,7 +55,7 @@ public class DatabaseConnection {
 
         while (resultSet.next()) {
             if (resultSet.getBoolean(5)) {
-                logger.debug("Alert for EventID --" + resultSet.getString(1) + "--");
+                logger.debug("Alert for EventID --> " + resultSet.getString(1));
             }
         }
     }
