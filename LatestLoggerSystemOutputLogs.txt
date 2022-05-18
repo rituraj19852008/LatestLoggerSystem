@@ -18,3 +18,13 @@
 2022-05-18 17:32:45 DEBUG DatabaseConnection:58 - Alert for EventID <scsmbstgrc>
 2022-05-18 17:32:45 WARN  DatabaseConnection:66 - Deleting all entries in DB table < Events >.
 2022-05-18 17:32:45 INFO  DatabaseConnection:46 - Closing Database connection.
+2022-05-18 17:38:14 INFO  DatabaseConnection:20 - Opening database connection at < hsqldb/logs >
+2022-05-18 17:38:14 INFO  ENGINE:? - checkpointClose start
+2022-05-18 17:38:14 INFO  ENGINE:? - checkpointClose end
+2022-05-18 17:38:14 INFO  DatabaseConnection:28 - Creating Events table
+2022-05-18 17:38:15 DEBUG LoggerSystemMainEntryPoint:30 - Parsing file src/main/resources/logfile.txt for events.
+2022-05-18 17:38:15 DEBUG DatabaseConnection:53 - Retrieving all DB entries from Events  table.
+2022-05-18 17:38:15 DEBUG DatabaseConnection:58 - Alert for EventID --scsmbstgra--
+2022-05-18 17:38:15 DEBUG DatabaseConnection:58 - Alert for EventID --scsmbstgrc--
+2022-05-18 17:38:15 INFO  DatabaseConnection:65 - Deleting all entries in DB table < Events >.
+2022-05-18 17:38:15 INFO  DatabaseConnection:46 - Closing Database connection.

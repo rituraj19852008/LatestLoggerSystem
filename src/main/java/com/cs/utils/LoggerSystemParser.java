@@ -1,14 +1,14 @@
 package com.cs.utils;
 
 import com.google.gson.Gson;
-import com.cs.mappers.Event;
+import com.cs.mappers.LogEvent;
 import com.cs.mappers.ServerLog;
 
 import java.io.*;
 import java.sql.SQLException;
 import java.util.HashMap;
 
-public class Parser {
+public class LoggerSystemParser {
     public void parseLogs(BufferedReader reader, DatabaseConnection databaseConnection) throws IOException, SQLException {
         HashMap<String, ServerLog> eventMap = new HashMap<>();
         Gson gson = new Gson();
@@ -28,11 +28,11 @@ public class Parser {
                 alert = true;
             }
 
-            Event event = new Event.Builder(eventId, duration, alert)
+            LogEvent logEvent = new LogEvent.Builder(eventId, duration, alert)
                     .withHost(log.getHost())
                     .withType(log.getType())
                     .build();
-            databaseConnection.writeEvent(event);
+            databaseConnection.saveEvent(logEvent);
         }
     }
 }

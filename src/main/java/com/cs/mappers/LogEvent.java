@@ -1,6 +1,6 @@
 package com.cs.mappers;
 
-public class Event {
+public class LogEvent {
     private String id;
     private long duration;
     private boolean alert;
@@ -51,14 +51,14 @@ public class Event {
             return this;
         }
 
-        public Event build() {
-            Event event = new Event();
-            event.alert = this.alert;
-            event.duration = this.duration;
-            event.type = this.type;
-            event.host = this.host;
-            event.id = this.id;
-            return event;
+        public LogEvent build() {
+            LogEvent logEvent = new LogEvent();
+            logEvent.alert = this.alert;
+            logEvent.duration = this.duration;
+            logEvent.type = this.type;
+            logEvent.host = this.host;
+            logEvent.id = this.id;
+            return logEvent;
         }
     }
 }

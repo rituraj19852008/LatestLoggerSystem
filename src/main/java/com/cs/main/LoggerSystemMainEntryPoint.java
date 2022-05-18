@@ -1,7 +1,7 @@
 package com.cs.main;
 
 import com.cs.utils.DatabaseConnection;
-import com.cs.utils.Parser;
+import com.cs.utils.LoggerSystemParser;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -28,14 +28,14 @@ public class LoggerSystemMainEntryPoint {
             databaseConnection.createEventsTable();
 
             logger.debug("Parsing file " + file + " for events.");
-            Parser parser = new Parser();
-            parser.parseLogs(reader, databaseConnection);
+            LoggerSystemParser loggerSystemParser = new LoggerSystemParser();
+            loggerSystemParser.parseLogs(reader, databaseConnection);
 
-            databaseConnection.selectAll();
-            databaseConnection.deleteAll();
-            databaseConnection.closeDatabase();
+            databaseConnection.selectAllRecords();
+            databaseConnection.purgeAll();
+            databaseConnection.closeDB();
         } catch (IOException e) {
-            logger.error("Error parsing file < " + file + " >");
+            logger.error("Error parsing file ** " + file + " **");
             e.printStackTrace();
         } catch (SQLException e) {
             logger.error("Error encountered with DB");
