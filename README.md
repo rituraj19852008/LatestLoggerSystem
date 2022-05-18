@@ -2,8 +2,12 @@
 
 Running The Program
 In order to run the code you will need to either clone the repository locally or you can download the zip file into whichever directory you prefer and UnZip it.
+There are two ways to run this application :-
 
-After this you simply need to cd into LatestLoggerSystem and run the com.cs.main.LoggerSystemMainEntryPoint main method passing in the 
+1. Fire this maven command & it will boot up the Main class's main method , passing in the default log file in the 
+resources folder -> mvn compile exec:java .(look in the pom.xml exec-maven-plugin & change the argument if you want to 
+se your own log file. )
+2. After this you simply need to cd into LatestLoggerSystem and run the com.cs.main.LoggerSystemMainEntryPoint main method passing in the 
 filename as the argument to the main method , like this-> --args='src/main/resources/logfile.txt'(May be add it in the VM arguments in the Edit COnfigurations,
 if you are using Intellij) which will build and run the program with the log 
 file to be parsed being logfile.txt which is a sample file I created based on the example given in the assignment.

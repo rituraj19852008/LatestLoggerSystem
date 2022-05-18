@@ -38,3 +38,14 @@
 2022-05-18 17:48:56 DEBUG DatabaseConnection:58 - Alert for EventID --scsmbstgrb--
 2022-05-18 17:48:56 INFO  DatabaseConnection:65 - Deleting all entries in DB table < Events >.
 2022-05-18 17:48:57 INFO  DatabaseConnection:46 - Closing Database connection.
+2022-05-18 18:01:18 ERROR LoggerSystemMainEntryPoint:18 - Arguments needs be in the format --args='<File>'.
+2022-05-18 18:03:26 INFO  DatabaseConnection:20 - Opening database connection at < hsqldb/logs >
+2022-05-18 18:03:27 INFO  ENGINE:? - checkpointClose start
+2022-05-18 18:03:28 INFO  ENGINE:? - checkpointClose end
+2022-05-18 18:03:28 INFO  DatabaseConnection:28 - Creating Events table
+2022-05-18 18:03:31 DEBUG LoggerSystemMainEntryPoint:30 - Parsing file src/main/resources/logfile.txt for events.
+2022-05-18 18:03:31 DEBUG DatabaseConnection:53 - Retrieving all DB entries from Events  table.
+2022-05-18 18:03:31 DEBUG DatabaseConnection:58 - Alert for EventID --> scsmbstgra
+2022-05-18 18:03:31 DEBUG DatabaseConnection:58 - Alert for EventID --> scsmbstgrc
+2022-05-18 18:03:31 INFO  DatabaseConnection:65 - Deleting all entries in DB table < Events >.
+2022-05-18 18:03:31 INFO  DatabaseConnection:46 - Closing Database connection.
