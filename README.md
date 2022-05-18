@@ -12,3 +12,19 @@ In order to run with a different logfile you just need to move the log file into
 with the new file name in the mentioned command or give a relative path to the logfile that you would like to be parsed.
 
 Logging output from the program can be found in LatestLoggerSystemOutputLogs.txt
+
+
+Side Notes on the Output:-
+
+Regarding displaying the database values back to us for evaluation as in, 
+ what the program should do it just says to 
+,Flag any long events that take longer than 4ms and Write the found 
+event details to file-based HSQLDB in the working folder.
+So I implemented a SELECT * FROM Events statement which reads all 
+table entries and logs the alerts in debug mode.
+As well as this I also added a method to purge all records to clear the table
+before closing the connection as to avoid overlap of different files.
+In the LatestLoggerSystemOutputLogs.txt one can see the output after running the program
+& it prints the LogEvents that took more than 4ms , also we can inspect the DB while running
+the application to see all the values.
+
